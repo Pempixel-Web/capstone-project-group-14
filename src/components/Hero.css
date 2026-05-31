@@ -14,7 +14,7 @@ body{
     align-items:center;
     padding:80px 8%;
     overflow:hidden;
-    min-height:100vh;
+    height:620px;
     gap:50px;
 }
 .hero-text{
