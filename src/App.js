@@ -1,7 +1,17 @@
+import './App.css';
 import Hero from './components/Hero';
-
+import Planettable from './components/Planettable';
+import ContactForm from './components/Contactform';
+import VideoSection from './components/Videosection';
 function App() {
-  return <Hero />;
+  return (
+    <div className="App">
+      <Hero />
+      <VideoSection />
+      <Planettable />
+      <ContactForm />
+    </div>
+  );
 }
 
 export default App;
