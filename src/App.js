@@ -1,9 +1,14 @@
 import './App.css';
-import ContactForm from './components/ContactForm';
-
+import Hero from './components/Hero';
+import Planettable from './components/Planettable';
+import ContactForm from './components/Contactform';
+import VideoSection from './components/Videosection';
 function App() {
   return (
     <div className="App">
+      <Hero />
+      <VideoSection />
+      <Planettable />
       <ContactForm />
     </div>
   );
