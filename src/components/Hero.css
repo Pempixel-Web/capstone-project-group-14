@@ -64,7 +64,7 @@ body{
 }
 .hero-image img{
     width: 420px;
-    height: auto;
+    height: 100%;
     max-width: 100%;
     filter: drop-shadow(0 0 40px rgba(0, 119, 225, 0.5));
 } 
@@ -72,7 +72,7 @@ body{
     display:none;
 }
 
-/* responsive */
+/* responsive  for moblie device*/
 @media (max-width: 900px) {
   .hero {
     flex-direction: column-reverse;
