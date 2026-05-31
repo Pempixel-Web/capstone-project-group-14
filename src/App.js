@@ -1,12 +1,7 @@
-import './App.css';
-import ContactForm from './components/ContactForm';
+import Hero from './components/Hero';
 
 function App() {
-  return (
-    <div className="App">
-      <ContactForm />
-    </div>
-  );
+  return <Hero />;
 }
 
 export default App;
