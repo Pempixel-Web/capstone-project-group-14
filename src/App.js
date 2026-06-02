@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Planettable from './components/Planettable';
 import ContactForm from './components/Contactform';
 import VideoSection from './components/Videosection';
+import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
@@ -10,6 +11,7 @@ function App() {
       <VideoSection />
       <Planettable />
       <ContactForm />
+      <Footer />
     </div>
   );
 }

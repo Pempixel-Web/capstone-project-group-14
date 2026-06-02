@@ -1,134 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Footer Design</title>
+import './Footer.css';
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+export default function Footer() {
+  return (
+    <footer className="site-footer">
+      <div className="footer-container">
 
-    body{
-      background:#f5f5f5;
-    }
-
-    footer{
-      background:#02134d;
-      color:white;
-      padding:60px 80px 40px;
-    }
-
-    .footer-container{
-      display:flex;
-      flex-direction:column;
-      gap:40px;
-    }
-
-    .about-section h2{
-      font-size:32px;
-      margin-bottom:25px;
-      font-weight:700;
-    }
-
-    .about-section p{
-      font-size:24px;
-      color:#d8d8d8;
-    }
-
-    .footer-line{
-      width:100%;
-      height:1px;
-      background:#8f96b2;
-      margin-top:20px;
-    }
-
-    .footer-bottom{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-end;
-      flex-wrap:wrap;
-      gap:20px;
-      margin-top:30px;
-    }
-
-    .footer-left p{
-      font-size:22px;
-      line-height:1.7;
-      color:#f2f2f2;
-    }
-
-    .footer-right{
-      font-size:26px;
-      font-weight:600;
-    }
-
-    /* Responsive Design */
-    @media(max-width:768px){
-
-      footer{
-        padding:40px 25px;
-      }
-
-      .about-section h2{
-        font-size:26px;
-      }
-
-      .about-section p{
-        font-size:18px;
-      }
-
-      .footer-left p{
-        font-size:16px;
-      }
-
-      .footer-right{
-        font-size:20px;
-      }
-
-      .footer-bottom{
-        flex-direction:column;
-        align-items:flex-start;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <footer>
-    <div class="footer-container">
-
-      <div class="about-section">
-        <h2>About</h2>
-        <p>first name of group members</p>
-      </div>
-
-      <div class="footer-line"></div>
-
-      <div class="footer-bottom">
-
-        <div class="footer-left">
-          <p>©2026 Design by Amaka & Ifeoma A.</p>
-          <p>Built by GroupName. All rights reserved</p>
+        <div className="about-section">
+          <h2>Our team brings together individuals with diverse expertise, united by a common vision to collaborate effectively, solve challenges, and deliver high-quality results. </h2>
+          <p></p>
+          <p>Omotola, Sophie, Seth, Ese, Joseph </p>
+          
         </div>
 
-        <div class="footer-right">
-          TSAcademy
+        <div className="footer-line" />
+
+        <div className="footer-bottom">
+
+          <div className="footer-left">
+            <p>©2026 Design by <a href="https://amakandukwu.com/">Amaka</a> & <a href="https://www.linkedin.com/in/ifeomaokocha/">Ifeoma A.</a></p>
+            <p>Built by <a href="https://github.com/Pempixel-Web/capstone-project-group-14.git">Group 14</a>. All rights reserved</p>
+          </div>
+
+          <div className="footer-right"> <a href="https://tsacademyonline.com/">TSAcademy</a></div>
+
         </div>
 
       </div>
-
-    </div>
-  </footer>
-
-  <script>
-    console.log("Footer Loaded Successfully");
-  </script>
-
-</body>
-</html>
+    </footer>
+  );
+}
