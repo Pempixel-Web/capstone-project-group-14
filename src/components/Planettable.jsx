@@ -3,6 +3,11 @@ import './Planettable.css';
 function Planettable() {
   return (
     <div className="table-wrapper">
+      <h1>Planetary Facts at a Glance</h1><br></br>
+      <p>Below is a comparative table of major planets in our solar system
+        . The data highlights key physical <br></br> properties used by astronomers and researchers worldwide. 
+      </p><br></br><br></br>
+      <p>Data about the planets of our solar system (Planetary facts were taken from NASA)<br></br></p>
       <table>
         <thead>
           <tr>
