@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="about-section">
           <h2>Our team brings together individuals with diverse expertise, united by a common vision to collaborate effectively, solve challenges, and deliver high-quality results. </h2>
           <p></p>
-          <p>Omotola, Sophie, Seth, Ese, Joseph </p>
+          <p>Omotola, Sophie, Seth, Ese, Joseph, Odunayo, Christiana, Omoyisola </p>
           
         </div>
 

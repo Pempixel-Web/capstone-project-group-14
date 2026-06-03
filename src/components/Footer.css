@@ -49,6 +49,10 @@
   font-weight:600;
 }
 
+h2{
+  font-family: 'Poppins', sans-serif; 
+}
+
 /* Responsive Design */
 @media(max-width:768px){
   .site-footer{
