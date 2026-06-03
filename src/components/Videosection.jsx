@@ -11,7 +11,6 @@ function VideoSection() {
           muted
           loop
           playsInline
-          controls
           className="video"
         >
           your browser does not support the video tag
