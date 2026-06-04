@@ -52,6 +52,7 @@ const planets = [
 function PlanetCard() {
   const [selectedPlanet, setSelectedPlanet] = useState(null);
 
+  
   return (
     <section className="planet-section">
       <div className="planet-header">
