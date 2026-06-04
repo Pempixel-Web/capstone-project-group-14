@@ -16,6 +16,18 @@ const [errors, setErrors] = useState({});
 const handleChange = (e) => {
 const { name, value } = e.target;
 
+// Phone: allow numbers only
+if (name === "phone") {
+const numbersOnly = value.replace(/\D/g, "");
+
+setFormData((prev) => ({
+...prev,
+[name]: numbersOnly,
+}));
+
+return;
+}
+
 setFormData((prev) => ({
 ...prev,
 [name]: value,
@@ -25,7 +37,11 @@ setFormData((prev) => ({
 const validate = () => {
 let newErrors = {};
 
-if (!formData.fullName || formData.fullName.length < 10 || formData.fullName.length > 20) {
+if (
+!formData.fullName ||
+formData.fullName.length < 10 ||
+formData.fullName.length > 20
+) {
 newErrors.fullName = "Name must be 10–20 characters";
 }
 
@@ -33,8 +49,9 @@ if (!formData.email) {
 newErrors.email = "Email is required";
 }
 
-if (!formData.phone || formData.phone.length > 11) {
-newErrors.phone = "Phone must be max 11 characters";
+// Phone validation: exactly 11 digits
+if (!/^\d{11}$/.test(formData.phone)) {
+newErrors.phone = "Phone must contain exactly 11 digits";
 }
 
 if (!formData.city) {
@@ -59,6 +76,15 @@ const formErrors = validate();
 setErrors(formErrors);
 
 if (Object.keys(formErrors).length === 0) {
+fetch("https://whitebricks.com/tsacademy.php", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify(formData),
+})
+.then((res) => res.text())
+.then((data) => {
 setSuccess(true);
 
 setFormData({
@@ -71,34 +97,58 @@ message: "",
 });
 
 setTimeout(() => setSuccess(false), 3000);
+})
+.catch((err) => {
+console.error("Error submitting form:", err);
+});
 }
 };
 
 return (
 <>
 {success && (
-<div style={{ color: "green", fontWeight: "bold", marginBottom: "10px" }}>
+<div
+style={{
+color: "green",
+fontWeight: "bold",
+marginBottom: "10px",
+}}
+>
 Form submitted successfully!
 </div>
 )}
 
-<form onSubmit={handleSubmit} className="form-grid">
-
+<form
+id="ContactForm"
+onSubmit={handleSubmit}
+className="form-grid"
+>
 {/* Full Name */}
 <div>
-<label>Full Name <span style={{ color: "red" }}>*</span></label>
+<label>
+Full Name <span style={{ color: "red" }}>*</span>
+</label>
+
 <input
 name="fullName"
 placeholder="e.g. John Doe"
 value={formData.fullName}
 onChange={handleChange}
 />
-{errors.fullName && <small style={{ color: "red" }}>{errors.fullName}</small>}
+
+{errors.fullName && (
+<small style={{ color: "red" }}>
+{errors.fullName}
+</small>
+)}
 </div>
 
 {/* Email */}
 <div>
-<label>Email <span style={{ color: "red" }}>*</span></label>
+<label>
+Email <span style={{ color: "red" }}>*</span>
+</label>
+
 <input
 name="email"
 type="email"
@@ -106,25 +156,46 @@ placeholder="e.g. johndoe@gmail.com"
 value={formData.email}
 onChange={handleChange}
 />
-{errors.email && <small style={{ color: "red" }}>{errors.email}</small>}
+
+{errors.email && (
+<small style={{ color: "red" }}>
+{errors.email}
+</small>
+)}
 </div>
 
 {/* Phone */}
 <div>
-<label>Phone <span style={{ color: "red" }}>*</span></label>
+<label>
+Phone <span style={{ color: "red" }}>*</span>
+</label>
+
 <input
 name="phone"
 placeholder="e.g. 08012345678"
+maxLength={11}
 value={formData.phone}
 onChange={handleChange}
 />
-{errors.phone && <small style={{ color: "red" }}>{errors.phone}</small>}
+
+{errors.phone && (
+<small style={{ color: "red" }}>
+{errors.phone}
+</small>
+)}
 </div>
 
 {/* City */}
 <div>
-<label>City <span style={{ color: "red" }}>*</span></label>
-<select name="city" value={formData.city} onChange={handleChange}>
+<label>
+City <span style={{ color: "red" }}>*</span>
+</label>
+
+<select
+name="city"
+value={formData.city}
+onChange={handleChange}
+>
 <option value="">Select your city</option>
 <option value="ikeja">Ikeja</option>
 <option value="lekki">Lekki</option>
@@ -136,31 +207,53 @@ onChange={handleChange}
 <option value="maryland">Maryland</option>
 <option value="festac">Festac</option>
 </select>
-{errors.city && <small style={{ color: "red" }}>{errors.city}</small>}
+
+{errors.city && (
+<small style={{ color: "red" }}>
+{errors.city}
+</small>
+)}
 </div>
 
 {/* Address */}
 <div className="half-width">
-<label>Address <span style={{ color: "red" }}>*</span></label>
+<label>
+Address <span style={{ color: "red" }}>*</span>
+</label>
+
 <input
 name="address"
 placeholder="e.g. 12 Allen Avenue, Ikeja"
 value={formData.address}
 onChange={handleChange}
 />
-{errors.address && <small style={{ color: "red" }}>{errors.address}</small>}
+
+{errors.address && (
+<small style={{ color: "red" }}>
+{errors.address}
+</small>
+)}
 </div>
 
 {/* Message */}
 <div className="half-width">
-<label>Message <span style={{ color: "red" }}>*</span></label>
+<label>
+Message <span style={{ color: "red" }}>*</span>
+</label>
+
 <textarea
 name="message"
 placeholder="Type your message here..."
+maxLength={100}
 value={formData.message}
 onChange={handleChange}
 />
-{errors.message && <small style={{ color: "red" }}>{errors.message}</small>}
+
+{errors.message && (
+<small style={{ color: "red" }}>
+{errors.message}
+</small>
+)}
 </div>
 
 {/* Button */}
@@ -169,7 +262,6 @@ onChange={handleChange}
 Submit
 </button>
 </div>
-
 </form>
 </>
 );
