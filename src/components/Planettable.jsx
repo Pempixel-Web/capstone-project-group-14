@@ -1,5 +1,6 @@
 // Planet table component by Izic1234
 
+
 function Planettable() {
   return (
     <div className="table-wrapper">
