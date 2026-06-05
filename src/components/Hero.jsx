@@ -17,7 +17,7 @@ export default function Hero() {
           <a href="#PlanetsCards" className="Explore-btn">
             Explore the Data
           </a>
-          <a href="#ContactForm" className="contact-btn">
+          <a href="#contact-header" className="contact-btn">
             Contact Us
           </a>
         </div>
