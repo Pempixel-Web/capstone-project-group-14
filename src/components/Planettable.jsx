@@ -8,7 +8,8 @@ function Planettable() {
       <p>Below is a comparative table of major planets in our solar system
         . The data highlights key physical <br></br> properties used by astronomers and researchers worldwide. 
       </p><br></br><br></br>
-      <p>Data about the planets of our solar system (Planetary facts were taken from NASA)<br></br></p>
+      <p> <strong>Data about the planets of our solar system (Planetary facts were taken from NASA)</strong> </p>
+      <br></br>
       <table>
         <thead>
           <tr>
