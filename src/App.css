@@ -122,3 +122,20 @@ textarea {
   height: auto;
 }
 }
+
+.contact-header {
+  margin-bottom: 30px;
+}
+
+.contact-header h2 {
+  color: #1f4fa3;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
