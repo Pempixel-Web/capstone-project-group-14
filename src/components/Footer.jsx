@@ -12,11 +12,9 @@ export default function Footer() {
           </h2>
           <p></p>
           {/* <p>Omotola, Sophie, Seth, Ese, Joseph, Odunayo, Christiana, Omoyisola </p> */}
-          <marquee behavior="scroll" direction="left" scrollamount="5">
-            Ezekiel • Peter • Omotola • Sophie • Seth • Ese • Joseph • Odunayo •
-            Christiana • Omoyisola • Amaka • Ifeoma • Sophie
-          </marquee>
-        </div>
+          <p>Ezekiel • Peter • Omotola • Sophie • Seth • Ese • Joseph • Odunayo •
+            Christiana • Omoyisola • Amaka • Ifeoma • Sophie</p>  
+          </div>
 
         <div className="footer-line" />
 
