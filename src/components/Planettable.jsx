@@ -1,4 +1,5 @@
-import './Planettable.css';
+// Planet table component by Izic1234
+import "./Planettable.css";
 
 function Planettable() {
   return (

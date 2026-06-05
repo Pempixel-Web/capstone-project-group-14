@@ -4,16 +4,17 @@ function VideoSection() {
   return (
     <section className="video-section">
       <div className="video-container">
+
         <video  
-          src="https://github.com/manoabale/planet-video-code/raw/refs/heads/main/Untitled%20design.mp4" 
+          src="/planet-video.mp4" 
           autoPlay
           muted
           loop
           playsInline
-          controls
           className="video"
         >
-        </video>
+          your browser does not support the video tag
+      </video>
       </div>
 
       <div className="content">
