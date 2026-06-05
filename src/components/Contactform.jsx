@@ -118,6 +118,14 @@ Form submitted successfully!
 </div>
 )}
 
+{/* Contact Form Header */}
+  <div className="contact-header">
+    <h2>Have Questions About Planetary Science?</h2>
+    <p>
+      Interested in learning more about space, astronomy, or how planetary data is collected and analyzed? <br /> Reach out and we'll get back to you. <br />
+    </p>
+  </div>
+
 <form
 id="ContactForm"
 onSubmit={handleSubmit}
