@@ -12,9 +12,9 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:80px 8%;
+    padding:0 8%;
     overflow:hidden;
-    min-height:100vh;
+    height:620px;
     gap:50px;
 }
 .hero-text{
@@ -58,15 +58,17 @@ body{
   background-color: transparent;
 }
 .hero-image{
-  flex:1;
+  flex:1.2;
   display:flex;
   justify-content:center;
+  align-items:center
 }
 .hero-image img{
-    width: 420px;
-    height: 100%;
+    width: 580px;
+    height: auto;
     max-width: 100%;
     filter: drop-shadow(0 0 40px rgba(0, 119, 225, 0.5));
+    transform: translateY(-20px);
 } 
 .hero-image figcaption{
     display:none;
