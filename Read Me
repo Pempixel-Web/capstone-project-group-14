@@ -1,0 +1,115 @@
+# Frontend Capstone Project – Group 14
+
+## Live Demo
+Deployment Link: https://capstone-project-group-14.vercel.app
+
+---
+
+## Project Summary
+
+This project is a responsive Solar System website built with React. It provides information about planets in our solar system through interactive sections, planet cards, tables, videos, and a contact form.
+
+The project demonstrates:
+
+- React component architecture
+- Responsive web design
+- CSS styling
+- Team collaboration using Git and GitHub
+- Reusable UI components
+
+---
+
+## Team Members
+
+| Name | GitHub Profile |
+|--------|---------------|
+| Vincent Ezekiel (Team Member) | https://github.com/Pempixel-Web |
+| Soyode Peter (Assistant Team Lead) | https://github.com/ghost-fxx |
+| Joshua Faith Ese | https://github.com/ese-babyy |
+| Omokwale Joseph Odianosen | https://github.com/CARNAGE-TECH |
+| Danladi Seth N. | https://github.com/sethdilly-jnr |
+| Sophie Obinyan | https://github.com/sophie004 |
+| Odunayo | https://github.com/Odunayo-48 |
+| Nweke Chinecherem Christiana | empty |
+| Oyedipe Omoyisola Isaac | https://github.com/izic1234 |
+| Nweke Chinecherem Christiana | https://github.com/PaulChristiana |
+| Emmanuel chinonye okoro | https://github.com/nuelokoro10-arch | 
+
+
+---
+
+## Components and Contributions
+
+### Vincent Ezekiel (Team Lead)
+Worked on:
+- Hero Component: Linked hero section button to Planet Card
+- Planet Card Component
+- Footer Styling
+- Planet Table Component
+- App Layout Integration
+
+### Soyode Peter (A. Team Lead) 
+Worked on 
+- video section 
+- ⁠video styling 
+- ⁠footer styling
+- ⁠mobile responsiveness
+- ⁠final corrections
+
+### Oyedipe Omoyisola Isaac
+- navbar jsx and css
+- table jsx
+
+### Joshua Faith Ese 
+Worked on 
+- Hero section 
+- Hero styling 
+- Final corrections alongside (Peter)
+
+### Sophie Obinyan 
+Worked on 
+- PlanetTable CSS
+
+### Adekunle Odunayo
+Worked on
+- video section
+
+### Danladi Seth N.
+Worked on
+- Footer
+
+### Okokwale Joseph 
+Worked on 
+- Contact form
+- ⁠form styling
+- ⁠form validation
+
+---
+
+## Project Structure
+
+src/
+├── components/
+│ ├── Navbar.jsx
+│ ├── Hero.jsx
+│ ├── PlanetCard.jsx
+│ ├── Planettable.jsx
+│ ├── ContactForm.jsx
+│ ├── VideoSection.jsx
+│ └── Footer.jsx
+│
+├── App.js
+└── index.js
+
+---
+
+## How to Run the Project Locally
+
+### Clone the Repository
+
+### run npm install
+
+### run npm start
+
+```bash
+git clone https://github.com/your-group/capstone-project-group-14.git
