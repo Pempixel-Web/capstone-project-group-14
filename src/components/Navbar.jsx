@@ -4,7 +4,7 @@ function Navbar() {
         <>
         <section className="projectlogo">
             <figure>
-          <img src="/graphics.png" alt="capstone logo" ></img>
+          <img src="/graphics.svg" alt="capstone logo" ></img>
           </figure>
         </section>
         </>
