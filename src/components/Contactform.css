@@ -19,7 +19,7 @@ form {
 background: white;
 padding: 2% 8%;
 border-radius: 12px;
-width: 95vw;
+width: 100%;
 max-width: none; 
 box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
