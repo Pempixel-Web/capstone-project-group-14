@@ -4,11 +4,11 @@
   justify-content: center;
   width: 95vw;
   max-width: none;
-  gap: 3.5rem;
+  gap: 3rem;
   padding:2% 8%;
   background: #fff;
   box-shadow: 0 10px 25px rgba(249, 223, 223, 0.1);
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .video-container {
@@ -54,8 +54,8 @@
   .video-section {
     width: 95vw;
     flex-direction: column-reverse;
-    gap: 2rem;
-    padding: 25px;
+    gap: 1rem;
+    padding: 24px;
   }
 
   .video-container,
@@ -70,7 +70,7 @@
 
 @media (max-width: 500px) {
   .video-section {
-    padding: 20px;
+    padding:2% 15px;
   }
 
   .video {
@@ -79,6 +79,8 @@
 
   .content h2 {
     font-size: 1.6rem;
+    line-height: 1.7;
+    max-width: 100%;
   }
 }
 
