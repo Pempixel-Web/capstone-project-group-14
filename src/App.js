@@ -11,15 +11,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <br />
       <VideoSection />
-      <br />
       <PlanetCard/>
-      <br />
       <Planettable />
-      <br />
       <ContactForm />
-      <br />
       <Footer />
     </div>
   );

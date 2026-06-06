@@ -17,7 +17,7 @@ font-family: Arial, sans-serif;
 
 form {
 background: white;
-padding: 25px;
+padding: 2% 8%;
 border-radius: 12px;
 width: 95vw;
 max-width: none; 
@@ -132,7 +132,7 @@ textarea {
 
 .contact-header {
   margin-bottom: 30px;
-  padding: 0 10px;
+  padding: 0 8%;
 }
 
 .contact-header h2 {

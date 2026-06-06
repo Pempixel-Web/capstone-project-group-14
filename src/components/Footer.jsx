@@ -12,8 +12,8 @@ export default function Footer() {
           </h2>
           <p></p>
           {/* <p>Omotola, Sophie, Seth, Ese, Joseph, Odunayo, Christiana, Omoyisola </p> */}
-          <p>Ezekiel • Peter • Omotola • Sophie • Seth • Ese • Joseph • Odunayo •
-            Christiana • Omoyisola • Amaka • Ifeoma • Sophie</p>  
+          <p>Ezekiel • Peter • Seth • Ese • Joseph • Odunayo •
+            Christiana • Omoyisola • Sophie</p>  
           </div>
 
         <div className="footer-line" />
@@ -27,9 +27,9 @@ export default function Footer() {
             <p>
               Built by{" "}
               <a href="https://github.com/Pempixel-Web/capstone-project-group-14.git">
-                Group 14
-              </a>
-              . All rights reserved
+                Group 14 
+              </a> |{" "}
+                All rights reserved
             </p>
           </div>
 
