@@ -82,7 +82,7 @@ body{
   }
 }
 
-/* responsive  for moblie device*/
+/* responsive for mobile devices */
 @media (max-width: 900px) {
   .hero {
     flex-direction: column-reverse;
@@ -100,9 +100,26 @@ body{
   }
   .hero-buttons {
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
-  .hero-image img{
+  .hero-image img {
     width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    padding: 24px 16px;
+    gap: 30px;
+  }
+  .hero-text h1 {
+    font-size: 28px;
+  }
+  .hero-text p {
+    font-size: 15px;
+  }
+  .hero-image img {
+    width: 100%;
+    max-width: 260px;
   }
 }

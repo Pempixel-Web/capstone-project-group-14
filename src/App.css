@@ -117,6 +117,10 @@ width: 100%;
 .button-wrapper {
 width: 100%;
 }
+
+.contact-header {
+  text-align: center;
+}
 }
 
 @media (max-width: 900px) {
@@ -128,6 +132,7 @@ textarea {
 
 .contact-header {
   margin-bottom: 30px;
+  padding: 0 10px;
 }
 
 .contact-header h2 {

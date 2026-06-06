@@ -104,12 +104,31 @@
   transform: scale(0.95);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .planet-section {
     padding: 60px 5%;
   }
 
   .planet-header h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .planet-section {
+    padding: 40px 4%;
+  }
+
+  .planet-grid {
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    gap: 14px;
+  }
+
+  .planet-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .planet-image {
+    height: 160px;
   }
 }
