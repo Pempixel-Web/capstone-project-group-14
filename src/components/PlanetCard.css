@@ -11,7 +11,6 @@
 
 .planet-header h2 {
   font: Inter;
-  Weight: 600;
   font-size: 32px;
   color: #164BAF;
   margin-bottom: 15px;
@@ -20,8 +19,8 @@
 .planet-header p {
   color: #0f2a44;
   line-height: 150%;
-  line-spacing: 0%;
-  Horizontal-alignment: center;
+  letter-spacing: 0%;
+  initial-letter-align: center;
 }
 
 .planet-grid {
