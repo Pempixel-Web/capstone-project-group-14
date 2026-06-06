@@ -1,5 +1,25 @@
+
+
 .projectlogo {
-background-color:#051540 ;
-padding-left:  8%;
-padding-top: 2%;
+  background-color: #051540;
+  padding-left: 8%;
+  padding-top: 2%;
+}
+
+.projectlogo figure {
+  margin: 0;
+}
+
+.projectlogo img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .projectlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
 }
