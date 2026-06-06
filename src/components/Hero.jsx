@@ -11,7 +11,7 @@ export default function Hero() {
           Understand the planets not just by name,
            but by measurable facts.
             From size and mass to gravity and density, 
-            thi s page breaks down the solar system in a clear, data-driven way..
+            this page breaks down the solar system in a clear, data-driven way..
         </p>
         <div className="hero-buttons">
           <a href="#PlanetsCards" className="Explore-btn">
