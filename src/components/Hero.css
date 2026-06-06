@@ -12,7 +12,7 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 8%;
+    padding:2% 8%;
     overflow:hidden;
     height:620px;
     gap:50px;
@@ -69,12 +69,22 @@ body{
     max-width: 100%;
     filter: drop-shadow(0 0 40px rgba(0, 119, 225, 0.5));
     transform: translateY(-20px);
-} 
+    animation: float-hero 6s ease-in-out infinite;
+}
 .hero-image figcaption{
     display:none;
 }
 
-/* responsive  for moblie device*/
+@keyframes float-hero {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+/* responsive for mobile devices */
 @media (max-width: 900px) {
   .hero {
     flex-direction: column-reverse;
@@ -92,9 +102,26 @@ body{
   }
   .hero-buttons {
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
-  .hero-image img{
+  .hero-image img {
     width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    padding: 24px 16px;
+    gap: 30px;
+  }
+  .hero-text h1 {
+    font-size: 28px;
+  }
+  .hero-text p {
+    font-size: 15px;
+  }
+  .hero-image img {
+    width: 100%;
+    max-width: 260px;
   }
 }

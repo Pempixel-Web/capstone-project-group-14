@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState } from "react"; 
+
 
 export default function ContactForm() {
 const [formData, setFormData] = useState({
@@ -119,7 +120,8 @@ Form submitted successfully!
 )}
 
 {/* Contact Form Header */}
-  <div className="contact-header">
+
+  <div className="contact-header" id="contact-header">
     <h2>Have Questions About Planetary Science?</h2>
     <p>
       Interested in learning more about space, astronomy, or how planetary data is collected and analyzed? <br /> Reach out and we'll get back to you. <br />

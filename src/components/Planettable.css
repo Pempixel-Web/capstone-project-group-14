@@ -23,8 +23,19 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #ffffff;
-  display: flex;
-  padding: 40px;
+}
+
+.table-wrapper {
+  width: 100%;
+  padding: 2% 8%;
+  box-sizing: border-box;
+}
+
+.table-wrapper h1 {
+  color: #1f4fa3;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 table {
@@ -56,4 +67,64 @@ td.group {
   color: #1a1a2e;
   font-weight: bold;
   vertical-align: middle;
+}
+
+@media (max-width: 900px) {
+  body {
+    padding: 20px;
+  }
+
+  .table-wrapper {
+    padding: 0 8%;
+  }
+
+  .table-intro {
+    width: auto;
+    margin-bottom: 24px;
+  }
+
+  thead th,
+  tbody td {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 12px;
+  }
+
+  .table-wrapper {
+    display: none;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+  }
+
+  thead th {
+    text-align: left;
+    border: none;
+  }
+
+  tbody td {
+    text-align: left;
+    border: none;
+    padding: 10px 8px;
+  }
+
+  .table-intro {
+    width: 100%;
+    margin-bottom: 16px;
+  }
 }
