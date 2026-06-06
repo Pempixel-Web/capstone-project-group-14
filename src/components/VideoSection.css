@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 95vw;
+  width: 100%;
   max-width: none;
   gap: 3rem;
   padding:2% 8%;
