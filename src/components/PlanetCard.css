@@ -109,6 +109,10 @@
     padding: 60px 5%;
   }
 
+  .planet-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .planet-header h2 {
     font-size: 2rem;
   }
