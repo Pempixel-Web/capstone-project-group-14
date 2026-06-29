@@ -72,38 +72,23 @@ return newErrors;
 };
 
 const handleSubmit = (e) => {
-e.preventDefault();
+  e.preventDefault();
 
-const formErrors = validate();
-setErrors(formErrors);
+  const formErrors = validate();
+  setErrors(formErrors);
 
-if (Object.keys(formErrors).length === 0) {
-fetch("https://whitebricks.com/tsacademy.php", {
-method: "POST",
-headers: {
-"Content-Type": "application/json",
-},
-body: JSON.stringify(formData),
-})
-.then((res) => res.text())
-.then((data) => {
-setSuccess(true);
-
-setFormData({
-fullName: "",
-email: "",
-phone: "",
-city: "",
-address: "",
-message: "",
-});
-
-setTimeout(() => setSuccess(false), 3000);
-})
-.catch((err) => {
-console.error("Error submitting form:", err);
-});
-}
+  if (Object.keys(formErrors).length === 0) {
+    setSuccess(true);
+    setFormData({
+      fullName: "",
+      email: "",
+      phone: "",
+      city: "",
+      address: "",
+      message: "",
+    });
+    setTimeout(() => setSuccess(false), 3000);
+  }
 };
 
 return (
