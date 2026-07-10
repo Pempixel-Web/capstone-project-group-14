@@ -71,13 +71,18 @@ newErrors.message = "Message must be max 100 characters";
 return newErrors;
 };
 
-const handleSubmit = (e) => {
+const handleSubmit = async (e) => {
   e.preventDefault();
 
   const formErrors = validate();
   setErrors(formErrors);
 
   if (Object.keys(formErrors).length === 0) {
+    await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
     setSuccess(true);
     setFormData({
       fullName: "",
