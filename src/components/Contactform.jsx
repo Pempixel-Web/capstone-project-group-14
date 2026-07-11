@@ -1,5 +1,6 @@
 import { useState } from "react"; 
 import "./Contactform.css";
+import emailjs from "@emailjs/browser";
 
 
 export default function ContactForm() {
@@ -78,11 +79,12 @@ const handleSubmit = async (e) => {
   setErrors(formErrors);
 
   if (Object.keys(formErrors).length === 0) {
-    await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    await emailjs.send(
+  "service_uz8bcme",
+  "template_b7a7jis",
+  formData,
+  "3fxZ5xsj5fZA1yl2F"
+);
     setSuccess(true);
     setFormData({
       fullName: "",
