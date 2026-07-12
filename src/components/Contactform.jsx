@@ -80,7 +80,7 @@ const handleSubmit = async (e) => {
 
   if (Object.keys(formErrors).length === 0) {
     await emailjs.send(
-  "service_uz8bcme",
+  "service_w4tp8kj",
   "template_b7a7jis",
   formData,
   "3fxZ5xsj5fZA1yl2F"
