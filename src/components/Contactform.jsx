@@ -45,7 +45,7 @@ if (
 formData.fullName.length < 10 ||
 formData.fullName.length > 20
 ) {
-newErrors.fullName = "Name must be 10–20 characters";
+newErrors.fullName = "Name is required";
 }
 
 if (!formData.email) {
@@ -78,26 +78,29 @@ const handleSubmit = async (e) => {
   const formErrors = validate();
   setErrors(formErrors);
 
-  if (Object.keys(formErrors).length === 0) {
-    await emailjs.send(
-  "service_w4tp8kj",
-  "template_b7a7jis",
-  formData,
-  "3fxZ5xsj5fZA1yl2F"
+ if (Object.keys(formErrors).length === 0) {
+try {
+await emailjs.send(
+"service_w4tp8kj",
+"template_b7a7jis",
+formData,
+"3fxZ5xsj5fZA1yl2F"
 );
-    setSuccess(true);
-    setFormData({
-      fullName: "",
-      email: "",
-      phone: "",
-      city: "",
-      address: "",
-      message: "",
-    });
-    setTimeout(() => setSuccess(false), 3000);
-  }
+setSuccess(true);
+setFormData({
+fullName: "",
+email: "",
+phone: "",
+city: "",
+address: "",
+message: "",
+});
+setTimeout(() => setSuccess(false), 3000);
+} catch (error) {
+alert("Error: " + error.text);
+}
+}
 };
-
 return (
 <>
 {success && (
