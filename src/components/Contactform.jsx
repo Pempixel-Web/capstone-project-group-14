@@ -42,8 +42,7 @@ let newErrors = {};
 
 if (
 !formData.fullName ||
-formData.fullName.length < 10 ||
-formData.fullName.length > 20
+formData.fullName.length < 2
 ) {
 newErrors.fullName = "Name is required";
 }
