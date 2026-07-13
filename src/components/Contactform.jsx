@@ -94,7 +94,7 @@ city: "",
 address: "",
 message: "",
 });
-setTimeout(() => setSuccess(false), 3000);
+setTimeout(() => setSuccess(false), 8000);
 } catch (error) {
 alert("Error: " + error.text);
 }
