@@ -1,72 +1,115 @@
-HEAD
-# Getting Started with Create React App
+# Frontend Capstone Project – Group 14
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Demo
+Deployment Link: https://capstone-project-group-14.vercel.app
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Project Summary
 
-### `npm start`
+This project is a responsive Solar System website built with React. It provides information about planets in our solar system through interactive sections, planet cards, tables, videos, and a contact form.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project demonstrates:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React component architecture
+- Responsive web design
+- CSS styling
+- Team collaboration using Git and GitHub
+- Reusable UI components
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Team Members
 
-### `npm run build`
+| Name | GitHub Profile |
+|--------|---------------|
+| Vincent Ezekiel (Team Member) | https://github.com/Pempixel-Web |
+| Soyode Peter (Assistant Team Lead) | https://github.com/ghost-fxx |
+| Joshua Faith Ese | https://github.com/ese-babyy |
+| Omokwale Joseph Odianosen | https://github.com/CARNAGE-TECH |
+| Danladi Seth N. | https://github.com/sethdilly-jnr |
+| Sophie Obinyan | https://github.com/sophie004 |
+| Odunayo | https://github.com/Odunayo-48 |
+| Nweke Chinecherem Christiana | empty |
+| Oyedipe Omoyisola Isaac | https://github.com/izic1234 |
+| Nweke Chinecherem Christiana | https://github.com/PaulChristiana |
+| Emmanuel chinonye okoro | https://github.com/nuelokoro10-arch | 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Components and Contributions
 
-### `npm run eject`
+### Vincent Ezekiel (Team Lead)
+Worked on:
+- Hero Component: Linked hero section button to Planet Card
+- Planet Card Component
+- Footer Styling
+- Planet Table Component
+- App Layout Integration
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Soyode Peter (A. Team Lead) 
+Worked on 
+- video section 
+- ⁠video styling 
+- ⁠footer styling
+- ⁠mobile responsiveness
+- ⁠final corrections
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Oyedipe Omoyisola Isaac
+- navbar jsx and css
+- table jsx
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Joshua Faith Ese 
+Worked on 
+- Hero section 
+- Hero styling 
+- Final corrections alongside (Peter)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Sophie Obinyan 
+Worked on 
+- PlanetTable CSS
 
-## Learn More
+### Adekunle Odunayo
+Worked on
+- video section
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Danladi Seth N.
+Worked on
+- Footer
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Omokwale Joseph 
+Worked on 
+- Contact form
+- ⁠form styling
+- ⁠form validation
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Project Structure
 
-### Analyzing the Bundle Size
+src/
+├── components/
+│ ├── Navbar.jsx
+│ ├── Hero.jsx
+│ ├── PlanetCard.jsx
+│ ├── Planettable.jsx
+│ ├── ContactForm.jsx
+│ ├── VideoSection.jsx
+│ └── Footer.jsx
+│
+├── App.js
+└── index.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## How to Run the Project Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Clone the Repository
 
-### Advanced Configuration
+### run npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### run npm start
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
+```bash
+git clone https://github.com/your-group/capstone-project-group-14.git
